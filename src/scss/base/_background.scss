@@ -1,0 +1,5 @@
+@each $color, $value in $ot-theme-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}

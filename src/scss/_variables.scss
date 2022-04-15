@@ -1,0 +1,80 @@
+//common color type by otif
+$ot-purple:     #4c38EE;
+$ot-blue:       #0000FF;
+$ot-aqua:       #35C9E0;
+$ot-black:      #121212;
+$ot-green:      #4CAF50;
+$ot-red:        #FF3D00;
+
+$ot-gray5:      #686868;
+$ot-gray4:      #B2B2B2;
+$ot-gray3:      #E0E0E0;
+$ot-gray2:      #EFEFEF;
+$ot-gray1:      #FAFAFA;
+//custom color used by text and stroke
+$ot-text1:      $ot-gray5;
+$ot-text2:      $ot-gray4;
+$ot-stroke1:    $ot-gray3;
+$ot-light:      $ot-gray1;
+
+$ot-theme-colors: (
+  "ot-purple":  $ot-purple,
+  "ot-blue":    $ot-blue,
+  "ot-aqua":    $ot-aqua,
+  "ot-black":   $ot-black,
+  "ot-green":   $ot-green,
+  "ot-red":     $ot-red,
+
+  "ot-gray5":   $ot-gray5,
+  "ot-gray4":   $ot-gray4,
+  "ot-gray3":   $ot-gray3,
+  "ot-gray2":   $ot-gray2,
+  "ot-gray1":   $ot-gray1,
+);
+
+//override bootstrap default color
+$primary:       $ot-purple;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $ot-aqua;
+$warning:       $yellow !default;
+$danger:        $ot-red !default;
+$light:         $ot-light !default;
+$dark:          $ot-black !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+);
+
+$theme-colors:  map-merge($theme-colors, $ot-theme-colors);
+
+//size for width and height (25, 50, 75, 100 already built in bootstrap)
+$sizes: (
+        "5": 5%,
+        "10": 10%,
+        "15": 15%,
+        "20": 20%,
+        //"25": 25%,
+        "30": 30%,
+        "35": 35%,
+        "40": 40%,
+        "45": 45%,
+        //"50": 50%,
+        "55": 55%,
+        "60": 60%,
+        "65": 65%,
+        "70": 70%,
+        //"75": 75%,
+        "80": 80%,
+        "85": 85%,
+        "90": 90%,
+        "95": 95%,
+        //"100": 100%,
+);

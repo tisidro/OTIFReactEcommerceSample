@@ -1,0 +1,31 @@
+.btn > * {
+  vertical-align: middle;
+  line-height: 10px;
+}
+
+@each $color, $value in $ot-theme-colors {
+  .bt-link-#{$color} {
+    background-color: $value;
+  }
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
